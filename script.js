@@ -15,7 +15,7 @@ let serviceicon6 = document.getElementById("service-icon6")
 
 servicecard1.addEventListener("mouseover", ()=>{
     serviceicon1.innerHTML = ` <img src="images/shape1midori.svg" alt="" srcset="">`
-    serviceicon1.style.transitionDuration = "0.5s"
+  
 
 })
 servicecard1.addEventListener("mouseout", ()=>{
