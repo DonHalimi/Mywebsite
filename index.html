@@ -3,229 +3,290 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/22b3360a60.js" crossorigin="anonymous"></script>
 </head>
 <body>
-   
-<div class="hero">
-<div class="navbar">
 
-    <a class="main-link" href="home.html">CREATIVE</a>
-
-    <ul>        
-        <li class="side-links"><a href="index.html">SERVICES</a></li>
-        <li class="side-links"><a href="index.html">ABOUT</a></li>
-        <li class="side-links"><a href="index.html">CONTACT</a></li>
-    </ul>
-
-</div>
-
-<img id="banana" src="images/hero.jpg" alt="hero">
-
-<div class="inner-hero">
-    <p>Creative agency  <br> Digital Design</p>
-    <button class="banana-button" type="button">READ MORE</button>
-</div>
-
-<div  class="slider-buttons" >
-    <ul >
-        <li class="slider-button" ><i id="slider-button1" class="fas fa-circle fa-xs"></i></li>
-        <li class="slider-button" ><i id="slider-button2" class="fas fa-circle fa-xs"></i></li>
-        <li class="slider-button" ><i id="slider-button3" class="fas fa-circle fa-xs"></i></li>
-    </ul >
-</div>
-</div>
-</div>
-
-<div class="services">
-    <div class="services-maintext">
-        <h1>Our Services</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae nihil et distinctio amet tempora quibusdam sunt</p>
-</div>
-
-<div class="media-icons">
-        <div class="media-item" id="media-item1">
-            <div class="item-content">
-                <img src="images/shape1.png" alt="">
-            <div class="media-item-text">    
-                <h3>WEB DEVELOPMENT</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima autem sunt</p>
-            </div>
-            </div>
+    
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      
+      <div class="navbar">
+        <div class="nav-logo">
+          <h2> <a href="#">CREATIVE</a></h2>
         </div>
-        <div class="media-item" id="media-item2">
-            <div class="item-content">
-                <img src="images/shape2.png" alt="">
-                <div class="media-item-text"> 
-                <h3>WEB DEVELOPMENT</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima autem sunt</p>
-            </div>    
-            </div>
+        <div class="nav-links">
+          <div class="nav-link"><h3><a href="#">SERVICES</a></h3></div>
+          <div class="nav-link"><h3><a href="#">ABOUT</a></div> 
+          <div class="nav-link"><h3><a href="#">CONTACT</a></h3></div>
         </div>
-        <div class="media-item" id="media-item3">
-            <div class="item-content">
-                <img src="images/shape3.png" alt="">
-                <div class="media-item-text"> 
-                <h3>WEB DEVELOPMENT</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima autem sunt</p>
-            </div>    
-            </div>
+      </div>
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="rounded-circle active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1" class="rounded-circle"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"class="rounded-circle"></li></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="images/hero.jpg" alt="First slide">
+            <h1>Creative agency <br> Digital Design</h1>
+            <button class="banana-button">READ MORE</button>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="images/hero.jpg" alt="Second slide">
+            <h1>Creative agency <br> Digital Design</h1>
+            <button class="banana-button">READ MORE</button>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="images/hero.jpg" alt="Third slide">
+            <h1>Creative agency <br> Digital Design</h1>
+            <button class="banana-button">READ MORE</button>
+          </div>
         </div>
-        <div class="media-item" id="media-item4">
-            <div class="item-content">
-                <img src="images/shape4.png" alt="">
-                <div class="media-item-text"> 
-                <h3>WEB DEVELOPMENT</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima autem sunt</p>
-            </div>    
-            </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+      <div class="services">
+        <div class="services-header">
+          <h2>Our services</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, voluptatem</p>
         </div>
-        <div class="media-item" id="media-item5">
-            <div class="item-content">
-                <img src="images/shape5.png" alt="">
-                <div class="media-item-text"> 
-                <h3>WEB DEVELOPMENT</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima autem sunt</p>
-            </div>    
+
+        <div class="service-cards">
+
+          <div class="first-row">
+          <div class="row">
+
+            <div class="col-md-4">
+              <div id="service-card1" class="service-card hvr-grow">
+                <div id="service-icon1" class="service-icon">
+                  <img src="images/shape1yami.svg" alt="" srcset="">
+                </div>
+                <div class="service-icon-text">
+                  <h3>WEB DEVELOPMENT</h3>  <p> Lorem ipsum dolor sit amet  <br>adipisicing elit. Laudantium</p>
+                </div>
+              </div>
             </div>
+            <div class="col-md-4">
+              <div id="service-card2" class="service-card hvr-grow">
+                <div id="service-icon2"  class="service-icon">
+                  <img src="images/shape2yami.svg" alt="" srcset="">
+                </div>
+                <div class="service-icon-text">
+                  <h3>WEB DESIGN</h3>  <p> Lorem ipsum dolor sit amet  <br>adipisicing elit. Laudantium</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div id="service-card3" class="service-card hvr-grow">
+                <div id="service-icon3" class="service-icon">
+                  <img src="images/shape3yami.svg" alt="" srcset="">
+                </div>
+                <div class="service-icon-text">
+                  <h3>SEO DEVELOPMENT</h3>  <p> Lorem ipsum dolor sit amet  <br>adipisicing elit. Laudantium</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="media-item" id="media-item6">
-            <div class="item-content">
-                <img src="images/shape6.png" alt="">
-                <div class="media-item-text"> 
-                <h3>WEB DEVELOPMENT</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima autem sunt</p>
-            </div>    
+          <div class="row">
+
+            <div class="col-md-4">
+              <div id="service-card4" class="service-card hvr-grow">
+                <div id="service-icon4" class="service-icon">
+                  <img src="images/shape4yami.svg" alt="" srcset="">
+                </div>
+                <div class="service-icon-text">
+                  <h3>GOOGLE PAGESPEED</h3>  <p> Lorem ipsum dolor sit amet  <br>adipisicing elit. Laudantium</p>
+                </div>
+              </div>
             </div>
+            <div class="col-md-4">
+              <div id="service-card5" class="service-card hvr-grow">
+                <div id="service-icon5" class="service-icon">
+                  <img src="images/shape5yami.svg" alt="" srcset="">
+                </div>
+                <div class="service-icon-text">
+                  <h3>MANAGEMENT</h3>  <p> Lorem ipsum dolor sit amet  <br>adipisicing elit. Laudantium</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div id="service-card6" class="service-card hvr-grow">
+                <div id="service-icon6" class="service-icon">
+                  <img src="images/shape6yami.svg" alt="" srcset="">
+                </div>
+                <div class="service-icon-text">
+                  <h3>ANALYTICS RESULTS</h3>  <p> Lorem ipsum dolor sit amet  <br>adipisicing elit. Laudantium</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-     
-</div>
-
-<div class="showcase">
-
-<div id="showcase-buttons" class="showcase-buttons">
-    <button class="showcase-btn">ALL</button>
-    <button class="showcase-btn">PHOTOSHOP</button>
-    <button class="showcase-btn active">ILLUSTRATOR</button>
-    <button class="showcase-btn">BRAND</button>
-    <button class="showcase-btn">MOCKUP</button>
-   
-</div>
-
-<div class="showcase-images">
-    <div class="showcase-image"><img src="images/image1.jpg" alt="" srcset=""></div>
-    <div class="showcase-image"><img src="images/image2.jpg" alt="" srcset=""></div>
-    <div class="showcase-image"><img src="images/image3.jpg" alt="" srcset=""></div>
-    <div class="showcase-image"><img src="images/image4.jpg" alt="" srcset=""></div>
-    <div class="showcase-image"><img src="images/image6.jpg" alt="" srcset=""></div>
-    <div class="showcase-image"><img src="images/image5.jpg" alt="" srcset=""></div>
-</div>
-
-<button id="banana-button1" class="banana-button" type="button">SEE MORE WORK</button>
-
-</div>
-
-<div class="skills-element">
-    <div class="left-text">
-        <h1>Professional Skills</h1><br>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate natus voluptas asperiores consequatur ipsum magni ea tenetur adipisci itaque aliquam? Porro dicta optio ex aperiam sunt excepturi in at consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla maiores consequatur fuga quos dolorem rerum nesciunt nostrum iste eaque accusantium porro excepturi beatae quibusdam, suscipit impedit voluptatibus. Nihil, voluptas quis.</p>
-   
-        <div class="skill-meters">
-            <div class="skill-meter">
-                <h3>UI/UX Design</h3><br>
-                <h2>84%</h2>
-            </div>
-            <div class="skill-meter">
-                <h3>Web Design</h3><br>
-                <h2>94%</h2>
-            </div>
-            <div class="skill-meter">
-                <h3>Web Dev</h3><br>
-                <h2>98%</h2>
-            </div>
-        
+      </div>
+      
+      <div class="showcase">
+        <div class="showcase-buttons">
+          <div class="showcase-button"><h4>ALL</h4></div>
+          <div class="showcase-button"><h4>PHOTOSHOP</h4></div>
+          <div class="showcase-button"><h4>ILLUSTRATOR</h4></div>
+          <div class="showcase-button"><h4>BRAND</h4></div>
+          <div class="showcase-button"><h4>MOCKUP</h4></div>
         </div>
-    </div>
-    <img src="images/image7.jpg" alt="" srcset="">
-</div>
 
-<div class="team-element">
-    <div class="team-maintext">
-        <h1>Our Team</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae nihil et distinctio amet tempora quibusdam sunt</p>
-    </div>
-    <div class="team-members">
+        <div class="showcase-images">
+          <div class="container-fluid">
+          <div class="row first-row">
+            <div class="col-md-4"><div class="showcase-image hvr-grow"><img src="images/image1.jpg" alt="" srcset=""></div></div>
+            <div class="col-md-4"><div class="showcase-image hvr-grow"><img src="images/image2.jpg" alt="" srcset=""></div></div>
+            <div class="col-md-4"><div class="showcase-image hvr-grow"><img src="images/image3.jpg" alt="" srcset=""></div></div>
+          </div>
+          <div class="row second-row">
+            <div class="col-md-4"><div class="showcase-image hvr-grow"><img src="images/image4.jpg" alt="" srcset=""></div></div>
+            <div class="col-md-4"><div class="showcase-image hvr-grow"><img src="images/image6.jpg" alt="" srcset=""></div></div>
+            <div class="col-md-4"><div class="showcase-image hvr-grow"><img src="images/image5.jpg" alt="" srcset=""></div></div>
+          </div>
+        </div>
+        </div>
+        <button id="showcase-banana" class="banana-button">SEE MORE WORK</button>
+      </div>
 
-        <div class="team-member">
+      <div class="skills">
+        <div class="skills-text">
+          <h2>Professional Skills</h2>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi neque, laborum odit quia necessitatibus laboriosam iusto iste nulla natus nesciunt officia voluptates repellendus non reprehenderit repudiandae ipsum suscipit officiis voluptatum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur quasi natus facere, totam illo, adipisci placeat architecto optio assumenda aperiam quae distinctio veniam! Non ipsum repellat provident, velit asperiores praesentium?
+          </p>
+          <div class="flex-wrapper">                     
+            <div class="single-chart hvr-grow">
+              <h3>UI/UX Design</h3>
+              <svg viewBox="0 0 36 36" class="circular-chart blue">
+                <path class="circle-bg"
+                  d="M18 2.0845
+                    a 15.9155 15.9155 0 0 1 0 31.831
+                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                />
+                <path class="circle"
+                  stroke-dasharray="94, 100"
+                  d="M18 2.0845
+                    a 15.9155 15.9155 0 0 1 0 31.831
+                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                />
+                <text x="18" y="20.35" class="percentage">94%</text>
+              </svg>
+            </div>
+            <div class="single-chart hvr-grow">
+              <h3>Web Design</h3>
+              <svg viewBox="0 0 36 36" class="circular-chart blue">
+                <path class="circle-bg"
+                  d="M18 2.0845
+                    a 15.9155 15.9155 0 0 1 0 31.831
+                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                />
+                <path class="circle"
+                  stroke-dasharray="100, 100"
+                  d="M18 2.0845
+                    a 15.9155 15.9155 0 0 1 0 31.831
+                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                />
+                <text x="18" y="20.35" class="percentage">100%</text>
+              </svg>
+            </div>
+            <div class="single-chart hvr-grow">
+              <h3>Web Dev</h3>
+              <svg viewBox="0 0 36 36" class="circular-chart blue">
+                <path class="circle-bg"
+                  d="M18 2.0845
+                    a 15.9155 15.9155 0 0 1 0 31.831
+                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                />
+                <path class="circle"
+                  stroke-dasharray="84, 100"
+                  d="M18 2.0845
+                    a 15.9155 15.9155 0 0 1 0 31.831
+                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                />
+                <text x="18" y="20.35" class="percentage">84%</text>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="skills-image"><img src="images/image7.jpg" alt="" srcset=""></div>
+      </div>
+
+      <div class="team">
+        <div class="services-header">
+          <h2>Our Team</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, voluptatem</p>
+        </div>
+
+        <div class="team-players">
+          <div class="row">
             
-            <img src="images/person1.jpg" alt="" srcset="">
-
-            <div class="team-text">
-                <h3>NILLA DOE</h3>
-                <p>CREATIVE DESIGNER</p><br>
-                <p>+4 72 398455 88</p>
+            <div class="col-md-3">
+              <div class="team-player hvr-grow">
+              <img src="images/person1.jpg" alt="">
+              <h3>NILLA DOE</h3>
+              <p>CREATIVE DESIGNER</p>
+              <p>+4 72 398455 88</p>
             </div>
-            
-        </div>
-        <div class="team-member">
-            
-            <img src="images/person2.jpg" alt="" srcset="">
-
-            <div class="team-text">
-                <h3>MARTA SMITH</h3>
-                <p>FINANCE SUPPORT</p><br>
-                <p>+4 72 398455 88</p>
+          </div>
+            <div class="col-md-3">
+              <div class="team-player hvr-grow">
+              <img src="images/person2.jpg" alt="">
+              <h3>MARTA SMITH</h3>
+              <p>FINANCE SUPPORT</p>
+              <p>+4 72 398455 88</p>
             </div>
-
-        </div>
-        <div class="team-member">
-            
-            <img src="images/person3.jpg" alt="" srcset="">
-
-            <div class="team-text">
-                <h3>MICHAEL DOE</h3>
-                <p>OWNER CONSULTING</p><br>
-                <p>+4 72 398455 88</p>
+          </div>
+            <div class="col-md-3">
+              <div class="team-player hvr-grow">
+              <img src="images/person3.jpg" alt="">
+              <h3>MICHAEL DOE</h3>
+              <p>OWNER CONSULTING</p>
+              <p>+4 72 398455 88</p>
             </div>
-
-        </div>
-        <div class="team-member">
-            
-            <img src="images/person4.jpg" alt="" srcset="">
-
-            <div class="team-text">
-                <h3>TISA DOE</h3>
-                <p>FINANCE SUPPORT</p><br>
-                <p>+4 72 398455 88</p>
+          </div>
+            <div class="col-md-3">
+              <div class="team-player hvr-grow">
+              <img src="images/person4.jpg" alt="">
+              <h3>TISA DOE</h3>
+              <p>FINANCE SUPPORT</p>
+              <p>+4 72 398455 88</p>
             </div>
+          </div>
 
+          </div>
         </div>
-       
-</div>
+      </div>
 
-<div class="newsletter-element">
-    <div class="newsletter-text">
-        <h1>Subscribe to our Newsletter</h1>
-        <p>Subscribe to our newsletter and get 30% off free downloads mockups</p>
-    </div>
+      <div class="subscribe">
 
-<div class="subscribe-input">
-    <div class="input-css">
+        <div class="subscribe-text">
+          <h2>Join our Team!</h2>
+          <p>Join our team and become the best version of yourself!</p>
+        </div>
 
-        <input type="text" name="email" placeholder="ENTER YOUR EMAIL">
+        <div class="subscribe-input">
+          <input class="input" type="text" name="" id="" placeholder="ENTER YOUR EMAIL">
+          <button id="subscribe-banana" class="banana-button">SUBSCRIBE</button>
+        </div>
+       </div>
 
-    </div>
-    <button class="banana-button" id="banana-button2" type="button">Subscribe</button>
-</div>
+       <footer> <p>Don Halimi Designs &copy; 2020 </p></footer>
 
-</div>
-
-<footer>	<p>&#169; 2020 Don Halimi Designs :D</p> </footer>
-
-<script src="script.js"></script>
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
 </body>
 </html>
